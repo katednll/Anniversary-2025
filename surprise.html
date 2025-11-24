@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Surprise</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="notes.html">Love notes</a>
+      <a href="surprise.html">Surprise</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="title">A tiny game, then your surprise</h1>
+    <p class="subtitle">Answer a few questions—get 2 right to unlock.</p>
+
+    <form id="quiz-form" class="quiz">
+      <div class="q">
+        <label>Our first date (YYYY-MM-DD)</label>
+        <input id="first-date" class="input" type="date" required>
+      </div>
+      <div class="q">
+        <label>Your favorite snack</label>
+        <input id="fav-snack" class="input" type="text" placeholder="e.g., fries" required>
+      </div>
+      <div class="q">
+        <label>Our song</label>
+        <input id="song" class="input" type="text" placeholder="e.g., Perfect" required>
+      </div>
+      <button class="button" type="submit">Check answers</button>
+      <div id="score" class="tag">Score: 0/3</div>
+    </form>
+
+    <div id="reveal" class="card hidden" style="margin-top:18px">
+      <h3>Surprise unlocked</h3>
+      <p>I booked us a date on Friday—dinner, then a sunset walk where we first talked too long.</p>
+      <p>Check your messages for the details. I can’t wait.</p>
+    </div>
+  </div>
+
+  <footer class="footer">You’re my favorite surprise.</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
