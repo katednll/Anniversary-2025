@@ -95,3 +95,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
   setupLightbox();
   setupQuiz();
 });
+
+
+const card = document.getElementById('card');
+    card.addEventListener('click', () => {
+      card.classList.toggle('flipped');
+    });
