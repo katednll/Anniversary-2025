@@ -74,9 +74,9 @@ function setupQuiz(){
       song: $('#song').value.trim().toLowerCase(),
     };
     let score = 0;
-    if(answers.firstDate === '2023-07-15') score++;        // customize
-    if(answers.favSnack.includes('fries')) score++;
-    if(answers.song.includes('perfect')) score++;
+    if(answers.firstDate === '2022-12-19') score++;        // customize
+    if(answers.favSnack.includes('fries') || answers.favSnack.includes('potcor') || answers.favSnack.includes('potato corner')) score++;
+    if(answers.song.includes('daylight') || answers.song.includes('wishlist')) score++;
     $('#score').textContent = `Score: ${score}/3`;
     if(score >= 2){
       $('#reveal').classList.remove('hidden');
