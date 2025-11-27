@@ -304,6 +304,18 @@ img{max-width:100%;display:block;border-radius:12px}
       text-align: center;
       animation: fadeIn 0.5s ease;
     }
+    @media (max-width: 600px) {
+  .popup {
+    width: 90%;       /* full width on mobile */
+    padding: 8vw;     /* more breathing room */
+    font-size: 0.9rem;
+  }
+  .popup button {
+    width: 100%;      /* button stretches across */
+    padding: 1em;
+  }
+}
+
 
     /* Heart icon style */
     .popup::before {
