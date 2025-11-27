@@ -234,6 +234,15 @@ img{max-width:100%;display:block;border-radius:12px}
 .home-button .icon {
   line-height: 1;
 }
+@media (max-width: 600px) {
+  .home-btn {
+    display: block;          /* full width on mobile */
+    width: 90%;              /* stretch across screen */
+    margin: 10px auto;       /* center it */
+    font-size: 18px;         /* bigger text for tapping */
+    padding: 16px;           /* more finger-friendly */
+  }
+}
 
 .next-btn {
       position: relative;
