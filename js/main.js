@@ -103,9 +103,22 @@ const card = document.getElementById('card');
     });
 
 
-    function resize() {
-  W = canvas.width = Math.floor(window.innerWidth * DPR);
-  H = canvas.height = Math.floor(window.innerHeight * DPR);
-  canvas.style.width = "100%";
-  canvas.style.height = "100%";
-}
+//     function resize() {
+//   W = canvas.width = Math.floor(window.innerWidth * DPR);
+//   H = canvas.height = Math.floor(window.innerHeight * DPR);
+//   canvas.style.width = "100%";
+//   canvas.style.height = "100%";
+// }
+
+function showHeart() {
+      const btn = document.querySelector('.next-btn');
+      const heart = document.createElement('span');
+      heart.classList.add('heart');
+      heart.innerHTML = '❤';
+      heart.style.left = Math.random() * 60 + 'px';
+      btn.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 1000);
+    }

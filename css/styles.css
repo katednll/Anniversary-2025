@@ -4,7 +4,7 @@
   --muted: #b8c0ff;
   --accent: #ff79c6;     /* romantic pop */
   --accent-2: #64045c;
-  --card: #ff00a2;
+  --card: #f375c5;
   --shadow: 0 10px 30px rgba(77, 3, 54, 0.35);
 }
 
@@ -174,3 +174,96 @@ img{max-width:100%;display:block;border-radius:12px}
     }
 
 
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ff87b7;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 135, 183, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+  background-color: #ff6fa3;
+  transform: scale(1.05);
+}
+
+.home-button .icon {
+  font-size: 1.2rem;
+}
+
+.home-button .label {
+  font-size: 1rem;
+}
+
+.home-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background: #ff87b7;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  box-shadow: 0 6px 16px rgba(255, 135, 183, 0.4);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #ff6fa3;
+  transform: scale(1.1);
+}
+
+.home-button .icon {
+  line-height: 1;
+}
+
+.next-btn {
+      position: relative;
+      padding: 12px 30px;
+      background: linear-gradient(135deg, #ff99cc, #ff66b2);
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .next-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(255, 105, 180, 0.6);
+    }
+
+    .next-btn:active {
+      transform: scale(0.95);
+    }
+
+    /* Heart animation */
+    .heart {
+      position: absolute;
+      font-size: 20px;
+      color: #ff3366;
+      animation: floatUp 1s ease forwards;
+    }
+
+    @keyframes floatUp {
+      0% { opacity: 1; transform: translateY(0) scale(1); }
+      100% { opacity: 0; transform: translateY(-40px) scale(1.5); }
+    }
