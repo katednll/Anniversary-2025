@@ -101,3 +101,11 @@ const card = document.getElementById('card');
     card.addEventListener('click', () => {
       card.classList.toggle('flipped');
     });
+
+
+    function resize() {
+  W = canvas.width = Math.floor(window.innerWidth * DPR);
+  H = canvas.height = Math.floor(window.innerHeight * DPR);
+  canvas.style.width = "100%";
+  canvas.style.height = "100%";
+}
