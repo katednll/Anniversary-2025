@@ -228,7 +228,7 @@ img{max-width:100%;display:block;border-radius:12px}
 
 .home-button:hover {
   background-color: #ff6fa3;
-  transform: scale(1.1);
+  transform: scale(1.1);                            
 }
 
 .home-button .icon {
@@ -236,7 +236,7 @@ img{max-width:100%;display:block;border-radius:12px}
 }
 @media (max-width: 600px) {
   .home-btn {
-    display: block;          /* full width on mobile */
+    display: block;          /* full width on mobile */           
     width: 90%;              /* stretch across screen */
     margin: 10px auto;       /* center it */
     font-size: 18px;         /* bigger text for tapping */
@@ -424,3 +424,5 @@ button:hover, .button.secondary:hover {
   color: #d6336c;
   font-size: 18px;
 }
+
+
