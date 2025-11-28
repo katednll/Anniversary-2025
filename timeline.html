@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Our timeline</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- <nav class="nav">
     <div class="container">
@@ -19,8 +21,8 @@
 
   <nav class="nav">
     <a href="home.html" class="home-button">
-  <span class="icon">🏠</span>
-</a>
+      <span class="icon">🏠</span>
+    </a>
   </nav>
 
   <div class="container">
@@ -32,25 +34,53 @@
         <div class="date">Dec 19, 2022</div>
         <h3> @Palpitate coffee tanay </h3>
 
-<!-- Clickable text --> 
-  <p onclick="openPopup('popup1')">Our impromptu escape, a destined beginning.</p>
+        <!-- Clickable text -->
+        <p onclick="openPopup('popup1')">Our impromptu escape, a destined beginning.</p>
 
-  <!-- Popup + overlay -->
-  <div class="overlay" id="overlay1"></div>
-  <div class="popup" id="popup1">
-    <p style="color: rgb(109, 3, 111);">Our first spontaneous journey beyond the city felt like more than just an escape; it was as if fate had written a secret chapter for us alone. Beneath unpredictable skies and through unforeseen weather, we wandered side by side, wrapped in the quiet magic of the unknown. Every laugh, every glance, every shared silence carried with it the tender certainty that something rare was beginning to bloom. The sudden shifts in the air only drew us closer, as though the world itself conspired to pause and let love step forward. In that impromptu adventure, I felt the stirring of something extraordinary—an undeniable beginning destined to grow into a story as vast and uncontainable as the horizon itself.</p>
-    <button onclick="closePopup()">Close</button>
-  </div>
-
+        <!-- Popup + overlay -->  
+        <div class="overlay" id="overlay1"></div>
+        <div class="popup" id="popup1">
+          <p style="color: rgb(109, 3, 111);">Our first spontaneous journey beyond the city felt like more than just an
+            escape; it was as if fate had written a secret chapter for us alone. Beneath unpredictable skies and through
+            unforeseen weather, we wandered side by side, wrapped in the quiet magic of the unknown. Every laugh, every
+            glance, every shared silence carried with it the tender certainty that something rare was beginning to
+            bloom. The sudden shifts in the air only drew us closer, as though the world itself conspired to pause and
+            let love step forward. In that impromptu adventure, I felt the stirring of something extraordinary—an
+            undeniable beginning destined to grow into a story as vast and uncontainable as the horizon itself.</p>
+          <button onclick="closePopup()">Close</button>
         </div>
+
+      </div>
       <div class="event">
         <div class="date">Dec 20, 2022</div>
         <p onclick="openPopup('popup2')">A shy question, a forever answer.</p>
-      <div class="overlay" id="overlay2"></div>
-      <div class="popup" id="popup2">
-        <p style="color: rgb(109, 3, 111);">Our official anniversary, the moment etched so vividly in my heart. It was in the quiet of my room, where the world seemed to pause just for us. With a shy voice and trembling courage, I asked you the question that had been resting gently on my lips, and in that tender silence, everything changed. The walls around us became witnesses to a rare beginning, and the softness of that moment carried the promise of something lasting, something extraordinary. It wasn’t grand or rehearsed—it was simple, genuine, and beautifully ours, the kind of memory that lingers like a gentle melody, reminding me that love often begins in the most unassuming places.</p>
-        <button onclick="closePopup()">Close</button>
+        <div class="overlay" id="overlay2"></div>
+        <div class="popup" id="popup2">
+          <p style="color: rgb(109, 3, 111);">Our official anniversary, the moment etched so vividly in my heart. It was
+            in the quiet of my room, where the world seemed to pause just for us. With a shy voice and trembling
+            courage, I asked you the question that had been resting gently on my lips, and in that tender silence,
+            everything changed. The walls around us became witnesses to a rare beginning, and the softness of that
+            moment carried the promise of something lasting, something extraordinary. It wasn’t grand or rehearsed—it
+            was simple, genuine, and beautifully ours, the kind of memory that lingers like a gentle melody, reminding
+            me that love often begins in the most unassuming places.</p>
+          <button onclick="closePopup()">Close</button>
+        </div>
       </div>
+
+      <div class="event">
+        <div class="date">Dec 20, 2022</div>
+        <p onclick="openPopup('popup2')">A shy question, a forever answer.</p>
+        <div class="overlay" id="overlay2"></div>
+        <div class="popup" id="popup2">
+          <p style="color: rgb(109, 3, 111);">Our official anniversary, the moment etched so vividly in my heart. It was
+            in the quiet of my room, where the world seemed to pause just for us. With a shy voice and trembling
+            courage, I asked you the question that had been resting gently on my lips, and in that tender silence,
+            everything changed. The walls around us became witnesses to a rare beginning, and the softness of that
+            moment carried the promise of something lasting, something extraordinary. It wasn’t grand or rehearsed—it
+            was simple, genuine, and beautifully ours, the kind of memory that lingers like a gentle melody, reminding
+            me that love often begins in the most unassuming places.</p>
+          <button onclick="closePopup()">Close</button>
+        </div>
       </div>
 
 
@@ -70,21 +100,22 @@
         <div>A trip that turned into a thousand inside jokes. We still quote them.</div>
       </div>
     </div> -->
-  </div>
+    </div>
 
-  <footer class="footer">Always forward, always together.</footer>
-  <script>
-    function openPopup(id) {
-      document.getElementById(id).style.display = "block";
-      document.getElementById("overlay").style.display = "block";
-    }
-    function closePopup() {
-      document.querySelectorAll(".popup").forEach(p => p.style.display = "none");
-      document.getElementById("overlay").style.display = "none";
-    }
+    <footer class="footer">Always forward, always together.</footer>
+    <script>
+      function openPopup(id) {
+        document.getElementById(id).style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+      }
+      function closePopup() {
+        document.querySelectorAll(".popup").forEach(p => p.style.display = "none");
+        document.getElementById("overlay").style.display = "none";
+      }
 
 
-  </script>
-  <script src="js/main.js"></script>
+    </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

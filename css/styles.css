@@ -83,7 +83,7 @@ img{max-width:100%;display:block;border-radius:12px}
 .card h3{margin:0 0 8px;color:var(--text-2)}
 .card p{color:var(--text-2);}
 
-.footer{padding:40px 24px;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,.08)}
+.footer{padding:40px 24px;color:var(--accent-2);text-align:center;border-top:1px solid rgba(255,255,255,.08)}
 
 .count{font-size:28px;margin-top:14px}
 .tag{display:inline-block;padding:6px 10px;border:1px solid rgba(36, 11, 35, 0.12);border-radius:999px;color:var(--accent)}
